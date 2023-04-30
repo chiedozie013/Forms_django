@@ -1,0 +1,11 @@
+<p>Hello</p>
+
+<!-- post is used since data is sent from the form and creating an object from it -->
+<!-- csrf-token is a way of telling django that the form is safe -->
+<!-- form.as_p tells django to render the forms as paragraph tabs -->
+
+<form action="" method="post">
+  {% csrf_token %} {{form.as_p}}
+
+  <input type="submit" value="Submit" />
+</form>
